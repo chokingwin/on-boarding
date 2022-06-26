@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+
+.app {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+.login-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.login-page .login-wrap {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    padding: 20px;
+    min-width: 400px;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+}
+
+.login-page .login-wrap .title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}

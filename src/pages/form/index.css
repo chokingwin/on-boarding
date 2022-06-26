@@ -1,0 +1,103 @@
+.form-page {
+    position: relative;
+    padding: 20px;
+}
+
+.form-page .form-wrap {
+    max-width: 600px;
+    width: 600px;
+}
+
+.form-page .form-wrap .step-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-page .form-wrap .step-wrap .step1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.form-page .form-wrap .step-wrap .step1Done {
+    position: absolute;
+    top: 0;
+    left: -200%;
+    opacity: 0;
+    width: 100%;
+}
+
+.form-page .form-wrap .step-wrap .step2 {
+    position: absolute;
+    top: 0;
+    right: -200%;
+    width: 100%;
+    opacity: 0;
+}
+
+.form-page .form-wrap .step-wrap .step2Done {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+.form-page .form-wrap .step-wrap .step2 {
+    position: absolute;
+    top: 0;
+    right: -200%;
+    width: 100%;
+    opacity: 0;
+}
+
+.form-page .form-wrap .step-wrap .step1.leftSlide {
+    animation: step1SlideLeft 0.4s ease-in-out forwards;
+}
+
+.form-page .form-wrap .step-wrap .step2.leftSlide {
+    animation: step2SlideLeft 0.4s ease-in-out forwards;
+}
+
+.form-page .form-wrap .step-wrap .step1Done.rightSlide {
+    animation: step1SlideRihgt 0.4s ease-in-out forwards;
+}
+
+.form-page .form-wrap .step-wrap .step2Done.rightSlide {
+    animation: step2SlideRihgt 0.4s ease-in-out forwards;
+}
+
+@keyframes step1SlideLeft {
+    100% {
+        top: 0;
+        left: -200%;
+        opacity: 0;
+    }
+}
+
+@keyframes step2SlideLeft {
+    100% {
+        top: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes step1SlideRihgt {
+    100% {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes step2SlideRihgt {
+    100% {
+        top: 0;
+        right: -200%;
+        opacity: 0;
+    }
+}
