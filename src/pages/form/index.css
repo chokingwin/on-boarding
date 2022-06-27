@@ -6,6 +6,16 @@
 .form-page .form-wrap {
     max-width: 600px;
     width: 600px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .form-page .form-wrap {
+        width: 90vw;
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .form-page .form-wrap .step-wrap {
